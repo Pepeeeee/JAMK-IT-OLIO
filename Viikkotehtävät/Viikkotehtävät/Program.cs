@@ -75,7 +75,7 @@ namespace Viikkotehtävät
                 Console.WriteLine(retval);
             }
 
-            else if (numero == 4 || numero ==5)
+            else if (numero == 4 || numero == 5)
             {
                 retval = "numerosi on silti vain 2 LUUSERI";
                 Console.WriteLine(retval);
