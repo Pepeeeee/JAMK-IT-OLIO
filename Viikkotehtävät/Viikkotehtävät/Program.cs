@@ -45,14 +45,36 @@ namespace Viikkotehtävät
                     tehtava7();
                     break;
 
-                case 8:
-                    tehtava8();
-                    break;
+                    //    case 8:
+                    //      tehtava8();
+                        // break;
 
                 case 9:
                     Tehtava9();
                     break;
+
+                case 10:
+                    tehtava10();
+                    break;
+
+                case 11:
+                    tehtava11();
+                    break;
+
+                case 12:
+                    tehtava12();
+                    break;
+
+                case 13:
+                    tehtava13();
+                    break;
+
+                case 14:
+                    tehtava14();
+                    break;
+
                 
+
 
 
             }
@@ -221,32 +243,22 @@ namespace Viikkotehtävät
             }
         }
 
-        static void tehtava8() //kysyy käyttäjältä 3 lukua ja tulostaa suurimman
+         /* static void tehtava8() //kysyy käyttäjältä 3 lukua ja tulostaa suurimman   en osannu :(
         {
             Console.WriteLine("Anna 3 lukua");
 
             int[] luku = new int[3];
-            int i = 0;
-            int temp;
             for (i = 0; i < luku.Length; i++)
             {
                 luku[i] = int.Parse(Console.ReadLine());
             }
 
-            for (int g = i + 1; g < luku.Length; g++)
-            {
-                //verrataan g:tä ja i:tä ja korvataan i: suuremmalla luvulla
-                if (luku[i] > luku[g])
-                {
-                    temp = luku[i];
-                    luku[i] = luku[g];
-                    luku[g] = temp;
-                }
-            }
+            Array.Sort(luku);
+            Array.Reverse(luku);
 
             Console.WriteLine("\n" + luku[0]);
 
-        }
+        } */
 
          
             static void Tehtava9()
@@ -272,6 +284,166 @@ namespace Viikkotehtävät
                      }
             } 
       }
+
+
+        static void tehtava10()
+        {
+                  
+                int[] array = { 1, 2, 33, 44, 55, 68, 77, 96, 100 }; //tehdään taulukko
+                for (int i = 0; i < array.Length; i++)                  //sijoitetaan luvut taulukkoon
+                {
+                    if (array[i] % 2 == 0) Console.WriteLine("HEP! paikalla {0} numero on {1}.", i, array[i]);
+                }
+                Console.ReadLine();
+         }
+
+        static void tehtava11()
+        {
+            int numero;
+            Console.Write("Give a number : ");
+            string line = Console.ReadLine();
+            bool result = Int32.TryParse(line, out numero);
+            if (result)
+            {
+                int tahti = 1;
+                for (int i = 0; i < numero; i++)
+                {
+                    for (int g = 0; g < tahti; g++)
+                    {
+                        Console.Write("*");
+                    }
+                    tahti++;
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Et antanut numeroa!");
+            }
+            Console.ReadLine();
+
+        }
+
+        static void tehtava12()
+        {
+            int[] numerot = new int[5];
+           
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("annappa poeka numero : ");
+                string line = Console.ReadLine();
+                int numero;
+                bool result = Int32.TryParse(line, out numero);
+                if (result)
+                {
+                    numerot[i] = numero;
+                }
+                else
+                {
+                    Console.WriteLine("et antanut numeroa.");
+                }
+            }
+            // print numbers
+            Console.Write("numerosi ovat : ");
+            for (int i = numerot.Length - 1; i >= 0; i--)
+            {
+                Console.Write(numerot[i]);
+                if (i > 0) Console.Write(",");
+            }
+            Console.ReadLine();
+        }
+
+        static void tehtava13()
+        {
+            int[] pisteet = new int[5];
+
+            for (int i = 0; i < pisteet.Length; i++)
+            {
+                Console.Write("anna pisteet!: ", (i + 1));
+                string line = Console.ReadLine();
+                int piste;
+                bool tulos = Int32.TryParse(line, out piste);
+                if (tulos)
+                {
+                    pisteet[i] = piste;
+                }
+                else
+                {
+                    Console.WriteLine("en antanut pisteitä!!");
+                }
+            }
+            // sorttaus
+            Array.Sort(pisteet);
+
+            int summa = pisteet[1] + pisteet[2] + pisteet[3]; //lasketaan piteet yhteen
+            Console.WriteLine("yhteensä " + summa);
+
+            Console.ReadLine();
+
+        }
+
+        static void tehtava14()
+        {
+            int[] pisteet = new int[6];
+            int numero;
+            bool tulos;
+            Console.WriteLine("Anna oppilaille pisteitä 1-5");
+            do
+            {
+                Console.Write("Anna pisteet : ");
+                string line = Console.ReadLine();
+                tulos = Int32.TryParse(line, out numero);
+                if (tulos)
+                {
+                    switch (numero)
+                    {
+                        case 0: pisteet[0]++; break;
+                        case 1: pisteet[1]++; break;
+                        case 2: pisteet[2]++; break;
+                        case 3: pisteet[3]++; break;
+                        case 4: pisteet[4]++; break;
+                        case 5: pisteet[5]++; break;
+                    }
+                }
+            } while (tulos);
+            Console.WriteLine("pisteet olkaatte hyvatte:");
+            for (int i = 0; i < pisteet.Length; i++)
+            {
+                Console.WriteLine(i + ":");
+                for (int k = 0; k < pisteet[i]; k++) Console.WriteLine("*");
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+
+        static void tehtava16()
+        {
+            Random random = new Random();            //random random on uusi randomi
+            int randomNumber = random.Next(100);            randomi tulee väliltä 1-100
+            int number;
+            int guesses = 0;
+            Console.WriteLine("kokeile arvata numeroni 1-100");
+            do
+            {
+                Console.Write("arvaa numero : ");
+                string line = Console.ReadLine();
+                bool result = Int32.TryParse(line, out number);
+                if (result)
+                {
+                    if (number < randomNumber) Console.WriteLine("Number is bigger.");
+                    else if (number > randomNumber) Console.WriteLine("Number is smaller.");
+                    guesses++;
+                }
+                else
+                {
+                    Console.WriteLine("You don't give a number!");
+                }
+            } while (number != randomNumber);
+            Console.WriteLine("arvasit sen! sulla meni " + guesses + "yritystä!");
+            Console.ReadLine();
+        }
+
+
 
 
     } //tän yläpuolelle tehtäviä 1231231231231233122
