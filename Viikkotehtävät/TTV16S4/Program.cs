@@ -31,8 +31,10 @@ namespace TTV16S4
                 speed = value;
             }   
         }
+        public string Brand { get; set; }  //auton merkki
         //constructors
-        public Car()
+
+        public Car()//oletus konstruktori
         { }
         public Car (int horsepower, int speed)
         {
@@ -54,6 +56,10 @@ namespace TTV16S4
             else
                 speed = maxSpeed;
         }
+        public override string ToString()
+        {
+            return Brand + "\n hv: " + Horsepower + "\n Nopeus: " + speed;
+        }
     }
     
    
@@ -64,15 +70,20 @@ namespace TTV16S4
         {
             //luodaan Car-olio, auto = uusi auto jolla nopeus 175.
             Car car = new Car();
+            car.Brand = " toyota";
+            car.Horsepower = 200;
             car.Speed = 175;
             //luodaan toinen pirssi
             Car car2 = new Car();
+            car2.Brand = " BMW";
             car2.Horsepower = 300;
             car2.Speed = 250;
             //luodaan kolmas pikkufiiu
             Car fiat = new Car(55, 105);
+            fiat.Brand = " Fiat";
 
             //Näytetään konsolilla
+            Console.WriteLine("Ensimmäinen auto {0}", car.ToString());
             Console.WriteLine("Autosi 1 nopeus on {0}", car.Speed);
             Console.WriteLine("Autosi 2 Nopeus on {0}", car2.Speed);
             //kiihdytetään kumpaakin autoa
@@ -80,9 +91,9 @@ namespace TTV16S4
             car2.Accelerate(20);
             fiat.Accelerate(20);
             Console.WriteLine("kiihdytettiin  20km/h");
-            Console.WriteLine("Autosi 1 nopeus on {0}", car.Speed);
-            Console.WriteLine("Autosi 2 Nopeus on {0}", car2.Speed);
-            Console.WriteLine("Autosi fiat Nopeus on {0}", fiat.Speed);
+            Console.WriteLine("Autosi {1} nopeus on {0}", car.Speed, car.Brand);
+            Console.WriteLine("Autosi {1} Nopeus on {0}", car2.Speed, car2.Brand);
+            Console.WriteLine("Autosi {1} Nopeus on {0}", fiat.Speed, fiat.Brand);
 
         }
         static void Main(string[] args)
