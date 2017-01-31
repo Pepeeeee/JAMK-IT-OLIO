@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikkotehtävät", "Viikkot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OikeaaOliota", "Oikeaal\OikeaaOliota.csproj", "{A57C7E6C-98FD-4C98-A142-B2B236142975}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTV16S4", "TTV16S4\TTV16S4.csproj", "{3F62E0D0-F92F-4CF2-9889-E5D36F05D416}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A57C7E6C-98FD-4C98-A142-B2B236142975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A57C7E6C-98FD-4C98-A142-B2B236142975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A57C7E6C-98FD-4C98-A142-B2B236142975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F62E0D0-F92F-4CF2-9889-E5D36F05D416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F62E0D0-F92F-4CF2-9889-E5D36F05D416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F62E0D0-F92F-4CF2-9889-E5D36F05D416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F62E0D0-F92F-4CF2-9889-E5D36F05D416}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
