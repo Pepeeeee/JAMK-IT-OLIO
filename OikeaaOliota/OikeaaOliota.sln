@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OikeaaOliota", "OikeaaOliota\OikeaaOliota.csproj", "{480A8EEC-FE54-42F2-8D33-EF1946A4DA17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joku", "Joku\Joku.csproj", "{EE71F802-E192-4BCE-8D35-A246EEA70B7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra5", "Joku\Labra5.csproj", "{EE71F802-E192-4BCE-8D35-A246EEA70B7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

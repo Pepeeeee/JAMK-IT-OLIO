@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using JAMK.IT;
 
 namespace Viikkotehtävät
 {
@@ -11,7 +12,9 @@ namespace Viikkotehtävät
 
         static void Main()
         {
-            Console.WriteLine("Tereve tulemast, paina 1-5(20)");
+            
+
+            Console.WriteLine("Tereve tulemast, paina 1-15(ei kasi) ja paina 15 nii tyre");
             string retval = Console.ReadLine();
             int valinta = int.Parse(retval);
 
@@ -73,9 +76,12 @@ namespace Viikkotehtävät
                     tehtava14();
                     break;
 
+                case 15:
+                    Lab05Teht01();
+                    break;
                 
 
-
+           
 
             }
         }
@@ -258,7 +264,7 @@ namespace Viikkotehtävät
 
             Console.WriteLine("\n" + luku[0]);
 
-        } */
+        } */ 
 
          
             static void Tehtava9()
@@ -441,9 +447,47 @@ namespace Viikkotehtävät
             } while (number != randomNumber);
             Console.WriteLine("arvasit sen! sulla meni " + guesses + "yritystä!");
             Console.ReadLine();
+        } 
+
+        static void Lab05Teht01()
+        {
+            //programmed and tested by Pepe 7.2.2017
+            //testataan tyre ja vehicle luokkia
+            //luodaan eka auto
+            Vehicle auto = new JAMK.IT.Vehicle();
+            auto.Brand = "BMW";  //asetetaan get set arvot
+            auto.Model = "320";
+
+            //ostetaan parit renkaat
+            Tyre rinkula = new Tyre();
+            rinkula.Branch = "hankook";
+            rinkula.Size = "205/55R16";
+
+            Tyre rinkula2 = new Tyre();
+            rinkula2.Branch = "Pyöreät";
+            rinkula2.Size = "Isot";
+
+           
+
+
+            //Laitetaan bemariin taakse renkaat
+            auto.AddTyre(rinkula);
+            auto.AddTyre(rinkula);
+
+            //lisätään eteen bemmuun renkaat
+            auto.AddTyre(rinkula2);
+            auto.AddTyre(rinkula2);
+
+            //näytetään auton tiedot
+
+            Console.WriteLine("Autossasi {0} on seuraavat tiedot: {1}", auto.Brand, auto.ToString());
+        
+
+
+
+
+
         }
-
-
 
 
     } //tän yläpuolelle tehtäviä 1231231231231233122
