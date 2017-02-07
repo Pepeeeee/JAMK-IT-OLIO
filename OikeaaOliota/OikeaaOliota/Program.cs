@@ -1,17 +1,9 @@
 ﻿using System;
-
 using System.Collections.Generic;
-
 using System.Linq;
-
 using System.Text;
-
 using System.Threading.Tasks;
-
-
-
 namespace Random  
-
 {
 
      public class Student
@@ -71,7 +63,7 @@ namespace Random
                 { lennu.Name, lennu.ID, lennu.Age.ToString() },
                 { heka.Name, heka.ID, heka.Age.ToString() }
             };
-            // Tulostetaan teulukon paikat:
+            // Tulostetaan taulukon paikat:
             for (int i = 0; i < 5; i++
             {
                 Console.WriteLine("Opiskelija {0}: ", (i + 1));

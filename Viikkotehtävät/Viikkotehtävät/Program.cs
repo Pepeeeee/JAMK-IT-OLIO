@@ -419,7 +419,7 @@ namespace Viikkotehtävät
         static void tehtava16()
         {
             Random random = new Random();            //random random on uusi randomi
-            int randomNumber = random.Next(100);            randomi tulee väliltä 1-100
+            int randomNumber = random.Next(100);          //  randomi tulee väliltä 1-100
             int number;
             int guesses = 0;
             Console.WriteLine("kokeile arvata numeroni 1-100");

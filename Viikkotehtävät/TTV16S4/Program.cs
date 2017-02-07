@@ -33,7 +33,6 @@ namespace TTV16S4
         }
         public string Brand { get; set; }  //auton merkki
         //constructors
-
         public Car()//oletus konstruktori
         { }
         public Car (int horsepower, int speed)
@@ -42,10 +41,8 @@ namespace TTV16S4
             if (speed < maxSpeed)
                 this.Speed = speed; //this. viittaa olioon itseensä
             else
-                this.speed = maxSpeed;
-           
+                this.speed = maxSpeed;      
         }
-
 
         //methods
         public void Accelerate(int additions)
@@ -60,8 +57,7 @@ namespace TTV16S4
         {
             return Brand + "\n hv: " + Horsepower + "\n Nopeus: " + speed;
         }
-    }
-    
+    }  
    
    
     class Program
