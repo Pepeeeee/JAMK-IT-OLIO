@@ -23,13 +23,13 @@ namespace JAMK.IT
         public Vehicle()
         {
             Tyres = new Tyre[maxTyres];
-            Renkaat = new List<Tyre>;
+            Renkaat = new List<Tyre>();
 
         }
         //methods
         public AddTyreToList(Tyre tyre)   //ignoraa :d
         {
-            Renkaat.Add(tyre);
+           Renkaat.Add(tyre);
         }
         public void AddTyre(Tyre tyre)  //public, näkyy kaikille. Void --> ei palauta mitään, Addtyre -> methodin nimi. Tyre tyre¨--> parametri
         {
