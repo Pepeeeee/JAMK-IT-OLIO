@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace Kotitehtäviä
 {
-    class Program
+    class Rengas
     {
+
+        //properteja
+
+
+
+        //constructoreja
+
+        //methodeja
+
+        
+
+
         static void Main(string[] args)
         {
         }
