@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace Kotitehtäviä
 {
-    class Rengas
+    public class Rengas
     {
 
         //properteja
-
+        public string merkki { get; set; }
+        public string malli { get; set; }
+        public int rengaskoko { get; set; }
 
 
         //constructoreja
 
         //methodeja
 
-        
+
 
 
         static void Main(string[] args)
