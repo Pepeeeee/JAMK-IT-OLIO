@@ -13,13 +13,12 @@ namespace Kotitehtäviä
         public string Valmistaja { get; set; }
         public string Malli { get; set; }
         public string rengaskoko { get; set; }
-
+          //constructoreja
         public override string ToString()
         {
             return "Valmistaja: " + Valmistaja + " Malli:" + Malli + " rengas koko:" + rengaskoko;
 
         }
-        //constructoreja
 
         //methodeja
     }
@@ -30,17 +29,12 @@ namespace Kotitehtäviä
         private const int maxRenkaat = 4;
         private int lkmRenkaat = 0;
         public List<Rengas> Renkaat { get; }
-
         public Auto()
         {
             Renkaat = new List<Rengas>();
         }
-
-
-
         public void LisaaRengas(Rengas rengas)
         {
-
             if (lkmRenkaat < maxRenkaat)
             {
                 Renkaat.Add(rengas);
@@ -50,8 +44,7 @@ namespace Kotitehtäviä
             else
             {
                 Console.WriteLine("Autossasi on jo 4 Rengasta");
-            }
-
+           }
         }
         public override string ToString()
         {
@@ -62,13 +55,10 @@ namespace Kotitehtäviä
             }
             return s;
         }
-
-
         static void Main(string[] args)
         {
             Kasataan_auto();
         }
-
         static void Kasataan_auto()
         {
             Rengas tyre1 = new Rengas { Valmistaja = "Suomi,", Malli = "Pyöreä", rengaskoko = "20tuumaiset" };
@@ -78,9 +68,8 @@ namespace Kotitehtäviä
             datsuni.LisaaRengas(tyre1);
             datsuni.LisaaRengas(tyre1);
             datsuni.LisaaRengas(tyre1);
-            datsuni.LisaaRengas(tyre1);
-
-            
+            datsuni.LisaaRengas(tyre1);   
+                  
         }
     }
 }
