@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotitehtäviä", "Kotiteht�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra6Teth2", "Labra6Teth2\Labra6Teth2.csproj", "{72D9B571-1450-492D-9FD6-365CC788791C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poikkeukset", "D:\K1735\Labra7\Poikkeukset.csproj", "{4A496A23-66A2-4C7F-89F5-64052CF920A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{72D9B571-1450-492D-9FD6-365CC788791C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72D9B571-1450-492D-9FD6-365CC788791C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72D9B571-1450-492D-9FD6-365CC788791C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A496A23-66A2-4C7F-89F5-64052CF920A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A496A23-66A2-4C7F-89F5-64052CF920A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A496A23-66A2-4C7F-89F5-64052CF920A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A496A23-66A2-4C7F-89F5-64052CF920A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
