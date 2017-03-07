@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YksikkötestiTests", "Yksik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOPPA", "NOPPA\NOPPA.csproj", "{EF3F90FD-1CF4-4C8B-8C04-A98B9BE2AA5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L8T2 Ostokset", "L8T2 Ostokset\L8T2 Ostokset.csproj", "{942E0AED-235B-4A29-845E-C5C16FE64253}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EF3F90FD-1CF4-4C8B-8C04-A98B9BE2AA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF3F90FD-1CF4-4C8B-8C04-A98B9BE2AA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF3F90FD-1CF4-4C8B-8C04-A98B9BE2AA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942E0AED-235B-4A29-845E-C5C16FE64253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942E0AED-235B-4A29-845E-C5C16FE64253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942E0AED-235B-4A29-845E-C5C16FE64253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942E0AED-235B-4A29-845E-C5C16FE64253}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
