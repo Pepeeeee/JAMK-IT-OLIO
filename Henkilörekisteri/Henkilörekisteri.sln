@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NOPPA", "NOPPA\NOPPA.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L8T2 Ostokset", "L8T2 Ostokset\L8T2 Ostokset.csproj", "{942E0AED-235B-4A29-845E-C5C16FE64253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra9", "Labra9\Labra9.csproj", "{89F32291-E708-41C8-A2BB-CFA4647BB49A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{942E0AED-235B-4A29-845E-C5C16FE64253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{942E0AED-235B-4A29-845E-C5C16FE64253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{942E0AED-235B-4A29-845E-C5C16FE64253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F32291-E708-41C8-A2BB-CFA4647BB49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F32291-E708-41C8-A2BB-CFA4647BB49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F32291-E708-41C8-A2BB-CFA4647BB49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F32291-E708-41C8-A2BB-CFA4647BB49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
