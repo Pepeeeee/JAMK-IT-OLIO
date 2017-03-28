@@ -10,29 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Labra9
+namespace LABRA10
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for About.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class About : Window
     {
-        private int laskuri = 0;
-        public MainWindow()
+        public About()
         {
             InitializeComponent();
         }
 
-        private void btnSayHello_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            //luetaan textboxin arvo
-            string user = txtInput.Text;
-            //tervehditään käyttäjää
-            txtMessage.Text = "Terve "+ user;
-            
+            //suljetaan ikkuna
+            this.Close();
         }
     }
 }

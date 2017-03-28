@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L8T2 Ostokset", "L8T2 Ostok
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra9", "Labra9\Labra9.csproj", "{89F32291-E708-41C8-A2BB-CFA4647BB49A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LABRA10", "LABRA10\LABRA10.csproj", "{B509642B-3924-4740-95E2-05E2BB0D2CC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{89F32291-E708-41C8-A2BB-CFA4647BB49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89F32291-E708-41C8-A2BB-CFA4647BB49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89F32291-E708-41C8-A2BB-CFA4647BB49A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B509642B-3924-4740-95E2-05E2BB0D2CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B509642B-3924-4740-95E2-05E2BB0D2CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B509642B-3924-4740-95E2-05E2BB0D2CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B509642B-3924-4740-95E2-05E2BB0D2CC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
